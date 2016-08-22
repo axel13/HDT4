@@ -9,7 +9,8 @@ import java.util.Vector;
 
 /**
  *
- * @author Axel
+ * Axel Mazariegos 131212
+ * Gustavo Orellana 15073
  */
 public class StackVector extends Stack {
     
