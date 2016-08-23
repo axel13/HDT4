@@ -22,7 +22,7 @@ public class Calculos {
      * @param pila
      * @param resultados
      */
-    public void leer(Vector lineas, VectorStack pila, String[] resultados){
+    public void leer(Vector lineas, Stack pila, String[] resultados){
         
         String[] vLinea;
         String resultado;
@@ -137,10 +137,4 @@ public class Calculos {
         return answer;
     }
     
-    
-    
-   
-
-        
-            
 }
