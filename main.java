@@ -6,12 +6,15 @@
 import java.util.*;
 public class main {
     public static void main(String[] args){
+    	
         Scanner texto = new Scanner(System.in);
         String Archivo;
         
         try{
             System.out.println ("Nombre del archivo, incluir extension (.txt): " );
             Archivo = texto.next();
+            
+            Vector lines = new Vector();
             
             BufferedReader br = new BufferedReader(new FileReader(Archivo));
             try {
@@ -25,7 +28,12 @@ public class main {
             br.close();
             }
             
+            Calculos calculadora = new Calculos();
+            Factory crear = new Factory();
+            Stack pila = crear.StackFactory();
+            String[] resultados = new String [lines.size()]
             
+            calculadora.leer(lines, pila, String[] resultados)
             
         }
         
